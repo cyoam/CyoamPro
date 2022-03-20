@@ -1,0 +1,221 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Softnio">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<!-- Fav Icon  -->
+	<link rel="shortcut icon" href="{% static 'cyoam/favicon-cyoam.png' %}">
+	<!-- Site Title  -->
+	<title>Cyoam - Digital Agency &amp; Design Animation Software</title>
+	<!-- Bundle and Base CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/vendor.bundle.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/override-helena.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/theme.css' %}">
+
+</head>
+
+{% block head %}
+
+{% endblock %}
+
+
+
+<body class="body-wider bg-ocean-pattern bg-dark-alt">
+	<!-- Header -->
+	<header class="is-transparent header-s2 is-sticky is-shrink" id="header">
+		<div class="header-box">
+			<div class="header-main">
+				<div class="container">
+					<div class="header-wrap">
+						<!-- Logo  -->
+						<div class="header-logo logo">
+							<a href="./" class="logo-link">
+								<img class="logo-white" src="{% static 'cyoam/logo-white-cyoam.png' %}" srcset="{% static 'cyoam/logo-white2x-cyoam.png' %} 2x" alt="logo">
+							</a>
+						</div>
+
+						<!-- Menu Toogle -->
+						<div class="header-nav-toggle">
+							<a href="#" class="search search-mobile search-trigger"><i class="icon ti-search"></i></a>
+							<a href="#" class="navbar-toggle" data-menu-toggle="header-menu">
+								<div class="toggle-line">
+									<span></span>
+								</div>
+							</a>
+						</div>
+						<!-- Menu Toogle -->
+
+						<!-- Menu -->
+						<div class="header-navbar header-navbar-s3 header-navbar-ocean">
+							<nav class="header-menu" id="header-menu">
+								<ul class="menu ml-auto">
+
+									<li class="menu-item"><a class="menu-link nav-link" href="/">Home</a></li>
+									<li class="menu-item"><a class="menu-link nav-link" href="{% url 'works' %}">Works</a></li>
+									<li class="menu-item"><a class="menu-link nav-link" href="{% url 'pricing' %}">Pricing</a></li>
+									<li class="menu-item"><a class="menu-link nav-link" href="{% url 'about' %}">About Us</a></li>
+									<li class="menu-item"><a class="menu-link nav-link" href="{% url 'services' %}">Services</a></li>
+
+								</ul>
+								<ul class="menu-btns menu-btns-s2 ml-auto">
+									<li><a href="" class="btn search search-trigger"><i class="ti-search "></i></a></li>
+									<li><a href="{% url 'contact' %}" class="btn btn-sm">Start A project</a></li>
+								</ul>
+							</nav>
+						</div><!-- .header-navbar -->
+
+						<!-- header-search -->
+						<div class="header-search">
+							<form role="search" method="POST" class="search-form" action="#">
+								<div class="search-group">
+									<input type="text" class="input-search" placeholder="Search ...">
+									<button class="search-submit" type="submit"><i class="icon ti-search"></i></button>
+								</div>
+							</form>
+						</div>
+						<!-- . header-search -->
+					</div>
+				</div>
+			</div>
+
+            <!-- banner -->
+            {% block header %}
+
+            {% endblock %}
+            <!-- .banner -->
+
+
+		</div>
+	</header>
+	<!-- end header -->
+
+<!-- **************************************************************************************** -->
+<!-- **************************************************************************************** -->
+<!-- **************************************************************************************** -->
+<!-- **************************************************************************************** -->
+
+    {% block body %}
+
+
+    {% endblock %}
+
+
+<!-- **************************************************************************************** -->
+<!-- **************************************************************************************** -->
+<!-- **************************************************************************************** -->
+<!-- **************************************************************************************** -->
+
+
+
+	<!-- cta -->
+	<div class="section section-cta tc-light bg-ocean-dark-alt">
+		<div class="gshape-wrapper">
+			<div class="gshape gshape-sm gshape-sm-alt l55 t5"></div>
+			<div class="gshape gshape-lg gshape-lg-alt r50 b5"></div>
+			<div class="gshape gshape-md-s1 t15 d-none d-sm-block"></div>
+		</div>
+		<div class="container">
+			<div class="row gutter-vr-30px align-items-center justify-content-between">
+				<div class="col-lg-8 text-center text-lg-left">
+					<div class="cta-text-s2">
+						<h2><span>Ready to make  great ? </span> <strong>Let’s work together</strong></h2>
+					</div>
+				</div>
+				<div class="col-lg-4 text-lg-right text-center">
+					<div class="cta-btn">
+						<a href="{% url 'contact' %}" class="btn btn-lg">work with us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-image">
+			<img src="{% static 'images/cta-bg.png' %}" alt="banner">
+		</div>
+	</div>
+	<!-- cta -->
+
+	<footer class="section footer tc-bunker bg-ocean-dark">
+		<div class="container">
+			<div class="row gutter-vr-30px justify-content-betwwen">
+				<div class="col-lg-5 col-md-10 col-sm-9 col-12">
+					<div class="wgs">
+						<div class="wgs-content">
+							<div class="wgs-logo">
+								<a href="#">
+									<img src="{% static 'cyoam/logo-white-cyoam.png' %}" srcset="{% static 'cyoam/logo-white2x-cyoam.png' %}" alt="logo">
+								</a>
+							</div>
+							<p>&copy; 2019. All rights reserved.<br class="d-sm"> Designed &amp; Developed by <a href="/">Cyoam</a></p>
+						</div>
+					</div><!-- .wgs -->
+				</div><!-- .col -->
+				<div class="col-lg-2 col-md-4 col-sm-4 col-12">
+					<div class="wgs">
+						<div class="wgs-content">
+							<h4 class="wgs-title wgs-title-s2">Follow Us On</h4>
+							<ul class="social social-s5">
+                                <li><a href="https://cyoam.dribbble.com/" target="_blank"><em class="icon fab fa-dribbble"></em><span>Dribbble</span></a></li>
+								<li><a href="https://www.instagram.com/cyoam_design_agency/" target="_blank"><em class="icon fab fa-instagram"></em><span>Instagram</span></a></li>
+								<li><a href="https://www.behance.net/cyoam" target="_blank"><em class="icon fab fa-behance"></em><span>Behance</span></a></li>
+                                <li><a href="https://www.facebook.com/cyoam" target="_blank"><em class="icon fab fa-facebook-f"></em><span>Facebook</span></a></li>
+							</ul>
+						</div>
+					</div><!-- .wgs -->
+				</div><!-- .col -->
+				<div class="col-lg-2 col-md-4 col-sm-4 col-12 d-none">
+						<div class="wgs">
+							<div class="wgs-content">
+								<h4 class="wgs-title wgs-title-s2">Lets get Connected</h4>
+								<ul class="social social-s5 social-s5-alt">
+									<li><a href="#"><em class="icon fab fa-facebook-f"></em></a></li>
+									<li><a href="#"><em class="icon fab fa-twitter"></em></a></li>
+									<li><a href="https://cyoam.dribbble.com/"><em class="icon fab fa-dribbble"></em></a></li>
+									<li><a href="#"><em class="icon fab fa-pinterest"></em></a></li>
+								</ul>
+							</div>
+						</div><!-- .wgs -->
+				</div><!-- .col -->
+				<div class="col-lg-2 col-md-4 col-sm-4 col-6">
+					<div class="wgs">
+						<div class="wgs-content">
+							<ul class="wgs-menu mtm-10">
+								<li><a href="/">Home</a></li>
+								<li><a href="{% url 'about' %}">About us</a></li>
+								<li><a href="{% url 'about' %}">Why Cyoam?</a></li>
+								<li><a href="{% url 'team' %}">Meet the team</a></li>
+								<li><a href="{% url 'contact' %}">Contact</a></li>
+							</ul>
+						</div>
+					</div><!-- .wgs -->
+				</div><!-- .col -->
+				<div class="col-lg-2 col-md-4 col-sm-4 col-6">
+					<div class="wgs">
+						<div class="wgs-content">
+							<ul class="wgs-menu mtm-10">
+								<li><a href="{% url 'services' %}">Branding Identity</a></li>
+								<li><a href="{% url 'services' %}">Web Design</a></li>
+								<li><a href="{% url 'services' %}">Motion Graphics</a></li>
+								<li><a href="{% url 'services' %}">Ecommerce</a></li>
+								<li><a href="{% url 'services' %}">Packaging Design</a></li>
+							</ul>
+						</div>
+					</div><!-- .wgs -->
+				</div><!-- .col -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- preloader -->
+	<div class="preloader preloader-light preloader-helena no-split"><span class="spinner spinner-alt"><img class="spinner-brand" src="{% static 'cyoam/Loading.png' %}" alt=""></span></div>
+
+	<!-- JavaScript -->
+	<script src="{% static 'assets/js/jquery.bundle.js' %}"></script>
+	<script src="{% static 'assets/js/scripts.js' %}"></script>
+
+</body>
+</html>
